@@ -1,7 +1,7 @@
 package com.generics;
 
 /**
- * Program to find the maximum of given three floats
+ * Program to find the maximum of given three strings
  * @author Sheetal
  * @since 2021-08-17
  */
@@ -14,28 +14,29 @@ public class Maximum {
 	 */
 	public static void main(String[] args) {
 		//declaring and initialising varaibles
-		Float x = 3.4f;
-		Float y = 4.6f;
-		Float z = 6.7f;
+		String l = "apple";
+		String m = "banana";
+		String n = "orange";
 		//calling method to main
-		findMaximum(x,y,z);
+		findMaximum(l,m,n);
+		
+		
 	}
 		
 	/**
-	 * Method to find Maximum of given three floats using compare to
-	 * @param x 
-	 * @param y
-	 * @param z
-	 * @return maximum of x,y,z
+	 * Method to find Maximum of given three strings using compare to
+	 * @param l 
+	 * @param m
+	 * @param n
+	 * @return maximum of l,m,n
 	 */
-	private static void findMaximum(Float x, Float y, Float z) {
-		Float max = x;
-		if (y.compareTo(x)>0) {
-			max = y;
-	}
-		if (z.compareTo(max)>0) {
-			max = z;
+	private static void findMaximum(String l, String m, String n) {
+		String max = l;
+		if (m.compareTo(l)>0) {
+			max = m;
 		}
-		 System.out.println("Maximum of numbers are " +max);
+		if (n.compareTo(max)>0) {
+			max = n;
+		}		 System.out.println("Maximum of strings-" +max);
 	}
 }
