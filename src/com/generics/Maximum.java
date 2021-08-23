@@ -17,12 +17,17 @@ public class Maximum <T extends Comparable<T>>{
 		
 	//method to find max of array of any data type
 	private static <T extends Comparable> void getMaximum(T[] array){
-	        T max = array[0];
-	        for (int i=0;i<array.length; i++){
-	            if (array[i].compareTo(max)>0){
-	                max=array[i];
-	            }
-	        }
+		T max = array[0];
+        for (int i=0;i<array.length; i++){
+            if (array[i].compareTo(max)>0){
+                max=array[i];
+            }
+        }
+        Maximum.printMax(max);
+	}
+
+	//Extend the max method to print max 
+	private static<T> void printMax(T max) {
 	        System.out.println("Maximum : "+max);
 	    }
 	
