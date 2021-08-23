@@ -1,7 +1,7 @@
 package com.generics;
 
 /**
- * Program to find the maximum of given three strings
+ * Program to find the maximum of given three variables
  * @author Sheetal
  * @since 2021-08-18
  */
